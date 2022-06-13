@@ -12,11 +12,22 @@
   list-style: none;
   text-decoration: none;
 }
+
+/* --------------------------------- Header ------------------------------- */
+
+#header {
+  background: var(--black);
+}
+
 /* -------------------------- Section - knowledge ------------------------- */
 .section{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#conocimientos {
+  margin: 3rem 0;
 }
 
 .body-section-knowledge{
@@ -26,7 +37,8 @@
   flex-wrap: wrap;
   border: 2px solid var(--black);
   border-radius: 30px;
-  padding: 4rem 0;
+  padding: 3rem 0;
+  row-gap: 3rem;
 }
 
 .items-body-knowledge{
@@ -36,10 +48,89 @@
   width: 100%;
 }
 
+.items-body-knowledge>img{
+  width: 20%;
+  height: auto;
+}
+
 
 /*  -------------------------- Section - Projects ------------------------- */
 
+#projects {
+  margin: 0 0 3rem;
+}
 
+.contenedor {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tarjeta{
+  width: 100%;
+  height: 50vw;  
+  border-radius: 30px;
+  -webkit-box-shadow: 6px 6px 31px -8px rgba(0,0,0,0.45);
+  -moz-box-shadow: 6px 6px 31px -8px rgba(0,0,0,0.45);
+  box-shadow: 6px 6px 31px -8px rgba(0,0,0,0.45);
+}
+
+.contenido,.contenido>a {
+  width: 100%;
+  height: 100%;
+}
+
+.contenido {
+  display: none;
+}
+
+.tarjeta:hover .contenido {
+  display: block;
+  background-color: #181818b2;
+  border-radius: inherit;
+}
+
+.contenido>a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#tarjeta1 {
+  background-image: url(./public/pj1.jpg);
+}
+
+#tarjeta2 {
+  background-image: url(./public/pj2.jpg);
+}
+
+#tarjeta3 {
+  background-image: url(./public/pj3.jpg);
+}
+
+#tarjeta4 {
+  background-image: url(./public/pj4.jpg);
+}
+
+#tarjeta5 {
+  background-image: url(./public/pj5.jpg);
+}
+
+#tarjeta6 {
+  background-image: url(./public/pj6.jpg);
+}
+
+#tarjeta1,
+#tarjeta2,
+#tarjeta3,
+#tarjeta4,
+#tarjeta5,
+#tarjeta6 {
+  background-size: cover;
+  background-position: 50%;
+}
 
 /* ----------------------------- Footer ----------------------------- */
 
@@ -68,6 +159,10 @@
 }
 
 @media screen  and (min-width: 550px){
+
+  .items-body-knowledge{
+    width: 48%;
+  }
 
   #direction-map {
     width: 100%;
@@ -199,6 +294,16 @@
     grid-column: 1/3;
   }
 
+}
+
+@media screen and (min-width: 768px) {
+  .body-section-knowledge{
+    gap: 0;
+  }
+
+  .items-body-knowledge{
+    width: 33%;
+  }
 }
 
 @media screen and (min-width: 1200px) {

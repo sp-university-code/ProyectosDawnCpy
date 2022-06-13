@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<header>
+		<header id="header" class="pentagono">
 			<nav class="navbar">
 				<ul>
 					<li><a href="#conocimientos">Conocimientos</a></li>
@@ -29,7 +29,8 @@
 				<span>Development</span>
 			</h1>
 
-			<button>Contáctame</button>
+
+			<a href="#contacto" id="btn-contactame">Contáctame</a>
 		</header>
 
 		<section id="conocimientos" class="section">
@@ -55,42 +56,54 @@
 			</div>
 		</section>
 
-		<section class="section">
+		<section id="projects" class="section">
 			<h2 id="portafolio" class="title-section">Portafolio</h2>
 			<div class="contenedor">
-				<div class="tarjeta">
+				<div class="tarjeta" id="tarjeta1">
 					<div class="contenido">
-						<span><a href="">Abrir proyecto</a></span>
+						<a href="">
+							<span>Abrir proyecto</span>
+						</a>
 					</div>
 				</div>
 
-				<div class="tarjeta">
+				<div class="tarjeta" id="tarjeta2">
 					<div class="contenido">
-						<span><a href="">Abrir proyecto</a></span>
+						<a href="">
+							<span>Abrir proyecto</span>
+						</a>
 					</div>
 				</div>
 
-				<div class="tarjeta">
+				<div class="tarjeta" id="tarjeta3">
 					<div class="contenido">
-						<span><a href="">Abrir proyecto</a></span>
+						<a href="">
+							<span>Abrir proyecto</span>
+						</a>
 					</div>
 				</div>
 
-				<div class="tarjeta">
+				<div class="tarjeta" id="tarjeta4">
 					<div class="contenido">
-						<span><a href="">Abrir proyecto</a></span>
+						<a href="">
+							<span>Abrir proyecto</span>
+						</a>
 					</div>
 				</div>
 
-				<div class="tarjeta">
+				<div class="tarjeta" id="tarjeta5">
 					<div class="contenido">
-						<span><a href="">Abrir proyecto</a></span>
+						<a href="">
+							<span>Abrir proyecto</span>
+						</a>
 					</div>
 				</div>
 
-				<div class="tarjeta">
+				<div class="tarjeta" id="tarjeta6">
 					<div class="contenido">
-						<span><a href="">Abrir proyecto</a></span>
+						<a href="">
+							<span>Abrir proyecto</span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -111,27 +124,27 @@
 			<form id="contact-form">
 				<input
 					type="text"
-					name=""
+					name="name"
 					id="contact-form-name"
 					class="contact-form-items"
 					placeholder="Nombre"
 				/>
 				<input
 					type="email"
-					name=""
+					name="email"
 					id="contact-form-email"
 					class="contact-form-items"
 					placeholder="Correo"
 				/>
 				<input
 					type="text"
-					name=""
+					name="subject"
 					id="contact-form-subject"
 					class="contact-form-items"
 					placeholder="Asunto"
 				/>
 				<textarea
-					name=""
+					name="messaje"
 					id="contact-form-messaje"
 					class="contact-form-items"
 					placeholder="Mensaje"
