@@ -5,32 +5,42 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Jorge Zambrano | Software Deveploment</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="style-responsive.css">
 	</head>
 	<body>
-		<header id="header" class="pentagono">
+		<header id="header">
 			<nav class="navbar">
-				<ul>
-					<li><a href="#conocimientos">Conocimientos</a></li>
-					<li><a href="#portafolio">Portafolio</a></li>
-					<li><a href="#contacto">Contacto</a></li>
-				</ul>
+				<div class="container nav-container">
+						<input class="checkbox" type="checkbox"/>
+						<div class="hamburger-lines">
+							<span class="line line1"></span>
+							<span class="line line2"></span>
+							<span class="line line3"></span>
+						</div>  
+					<ul class="menu-items">
+						<li><a href="#conocimientos">Conocimientos</a></li>
+						<li><a href="#portafolio">Portafolio</a></li>
+						<li><a href="#contacto">Contacto</a></li>
+					</ul>
+				</div>
 			</nav>
-
-			<p>
-				Hola!<br />
-				Soy Jorge Zambrano
-			</p>
-
-			<div></div>
-
-			<h1>
-				<span>Software</span>
-				<span>Development</span>
-			</h1>
-
-
-			<a href="#contacto" id="btn-contactame">Contáctame</a>
+			<div class="header-body">
+				<p>
+					Hola!<br />
+					Soy Jorge Zambrano
+				</p>
+	
+				<div class="sepatator-line"></div>
+	
+				<h1>
+					<span>Software</span>
+					<span>Development</span>
+				</h1>
+				<div id="btn-contactame">
+					<a href="#contacto">Contáctame</a>
+				</div>
+			</div>
 		</header>
 
 		<section id="conocimientos" class="section">
