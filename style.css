@@ -295,3 +295,39 @@
 	text-align: center;
 	font-size: 0.7rem;
 }
+
+
+/* ----------------------- arrow up and audio ----------------------- */
+
+.arrow-up, .music-icons {
+	width: 2.4rem;
+	height: 2.4rem;
+	border: 2px solid var(--black);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background-color: white;
+	z-index: 10;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	margin-bottom: 12px;
+	margin-right: 12px;
+}
+
+.music-icons {
+	margin-bottom: 60px;
+}
+
+.arrow-up>img{
+	width: 75%;
+	height: 75%;
+}
+
+.music-icons>img{
+	width: 60%;
+	height: 60%;
+	padding-left: 1px;
+}
