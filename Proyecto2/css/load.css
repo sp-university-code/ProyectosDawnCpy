@@ -1,13 +1,23 @@
+
+#container-loader {
+  display: flex;
+  background-color: #212529;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+}
+
 .sk-cube-grid {
-  width: 40px;
-  height: 40px;
-  margin: 100px auto;
+  width: 80px;
+  height: 80px;
 }
 
 .sk-cube-grid .sk-cube {
   width: 33%;
   height: 33%;
-  background-color: #333;
+  background-color: whitesmoke;
   float: left;
   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
           animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
