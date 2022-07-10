@@ -20,7 +20,7 @@ const cargarDataPeliculas = async ()=>{
       } = pelicula
 
       text += `
-        <tr>
+        <tr class="align-middle">
           <td scope="row" class="text-center"><b>${contador}</b></td>
           <td class="text-center">${title}</td>
           <td class="text-center">${director}</td>
@@ -28,7 +28,7 @@ const cargarDataPeliculas = async ()=>{
           <td class="text-center">${release_date}</td>
           <td class="text-center">${running_time}</td>
           <td class="text-center">${rt_score}</td>
-          <td class="text-center"><span class="btn-info" data-id='${id}'>Más información</span></td>
+          <td class="text-center"><span class="btn btn-info" data-id='${id}'>Más información</span></td>
         </tr>
       `
       contador+=1
