@@ -4,5 +4,5 @@ window.addEventListener('load',()=>{
   setTimeout(()=>{
     containerLoader.classList.add('d-none')
     layoutSidenav.classList.remove('d-none')
-  },3000)
+  },6000)
 })
